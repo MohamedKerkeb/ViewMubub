@@ -5,13 +5,18 @@
 .App-header {
   background-color: #0091b5;
   min-height: 10vh;
+  font-size: calc(3px + 2vmin);
+  color: white;
+  padding: 0 10px;
+}
+
+.menu {
+  width: 960px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(3px + 2vmin);
-  color: white;
-  padding: 0 10px;
 }
 
 nav > ul {
@@ -22,11 +27,6 @@ nav > ul {
 nav > ul > li {
   list-style: none;
   margin-right: 5px;
-}
-
-nav > ul > li:first-child::after {
-  content: "/";
-  padding: 0 5px;
 }
 
 .App-link {

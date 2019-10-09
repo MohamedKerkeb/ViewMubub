@@ -1,0 +1,21 @@
+.container_Wilaya {
+  width: 960px;
+  border: 1px solid rebeccapurple;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capsule_Wilaya {
+  height: 100px;
+  width: 100px;
+  border: 1px dashed burlywood;
+  border-radius: 3px;
+  background: burlywood;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
