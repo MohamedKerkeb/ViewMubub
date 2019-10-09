@@ -16,6 +16,11 @@
   background: burlywood;
   margin: 3px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.capsule_Wilaya > span {
+  margin: 3px;
 }

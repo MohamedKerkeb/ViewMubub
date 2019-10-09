@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "./wilaya.css";
+import Advert from "../Advert/Advert";
 
 const Wilaya = ({ wilaya }) => {
   console.log(wilaya);
@@ -8,18 +9,22 @@ const Wilaya = ({ wilaya }) => {
     <>
       <div className="container_Wilaya">
         {wilaya.map(w => (
-          <div className="capsule_Wilaya">
-            <Link
-              to={{
-                pathname: "/advert",
-                state: { code: w.code }
-              }}
-            >
+          <Link
+            to={{
+              pathname: "/advert",
+              state: { code: w.code }
+            }}
+          >
+            <div className="capsule_Wilaya">
               <span>{w.wilaya}</span>
-            </Link>
-          </div>
+              <span>{w.code}</span>
+            </div>
+          </Link>
         ))}
       </div>
+      <Switch>
+        <Route path="/advert" component={Advert}></Route>
+      </Switch>
     </>
   );
 };
